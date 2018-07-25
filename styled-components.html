@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>styled-components的简单用法 | Mr Z</title>
+    <meta name="description" content="welcome to my private website">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.fea12cb3.css" as="style"><link rel="preload" href="/blog/assets/js/app.10884d59.js" as="script"><link rel="preload" href="/blog/assets/js/7.916a93d9.js" as="script"><link rel="prefetch" href="/blog/assets/js/3.d3254cda.js"><link rel="prefetch" href="/blog/assets/js/2.61c5963e.js"><link rel="prefetch" href="/blog/assets/js/4.aa83c1fb.js"><link rel="prefetch" href="/blog/assets/js/5.4fd02c41.js"><link rel="prefetch" href="/blog/assets/js/6.0eb35698.js"><link rel="prefetch" href="/blog/assets/js/8.c34951fc.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.fea12cb3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/blog/" class="home-link router-link-active"><!----><span class="site-name">
+      Mr Z
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/the-basic-usage-about-less.html" class="nav-link">文章</a></div><div class="nav-item"><a href="/blog/about.html" class="nav-link">关于</a></div><a href="https://github.com/zengshide123/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    问题反馈
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/the-basic-usage-about-less.html" class="nav-link">文章</a></div><div class="nav-item"><a href="/blog/about.html" class="nav-link">关于</a></div><a href="https://github.com/zengshide123/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    问题反馈
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><a href="/blog/" class="sidebar-link">首页</a></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>html</span><!----></p><ul class="sidebar-group-items"></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>css</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Javascript</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>jquery</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>React</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/blog/react-transition-group.html" class="sidebar-link">react动画库</a></li><li><a href="/blog/styled-components.html" class="active sidebar-link">styled-components的基本用法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/styled-components.html#安装项目依赖" class="sidebar-link">安装项目依赖</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#基本用法" class="sidebar-link">基本用法</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#属性传递" class="sidebar-link">属性传递</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#基于props定制样式" class="sidebar-link">基于props定制样式</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#样式组件的继承" class="sidebar-link">样式组件的继承</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#样式组件标签名的更换" class="sidebar-link">样式组件标签名的更换</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#扩展props" class="sidebar-link">扩展props</a></li><li class="sidebar-sub-header"><a href="/blog/styled-components.html#animation" class="sidebar-link">animation</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Vue</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>其他</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="styled-components的简单用法"><a href="#styled-components的简单用法" aria-hidden="true" class="header-anchor">#</a> styled-components的简单用法</h1><pre><code>Styled-components改变了简单的样式和组件的映射关系。将样式组件化（css in js）,
+让我们能够模块化开发、参数定制，也能够更加灵活的定义组件的样式和复用样式。
+</code></pre><h2 id="安装项目依赖"><a href="#安装项目依赖" aria-hidden="true" class="header-anchor">#</a> 安装项目依赖</h2><div class="language-powershell line-numbers-mode"><pre class="language-powershell"><code>npm install <span class="token operator">--</span>save styled<span class="token operator">-</span>components
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="基本用法"><a href="#基本用法" aria-hidden="true" class="header-anchor">#</a> 基本用法</h2><p>定义样式组件和使用</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Title <span class="token operator">=</span> styled<span class="token punctuation">.</span>h1<span class="token template-string"><span class="token string">`
+                    font-size: 1.5em;
+                    text-align: center;
+                    color: palevioletred;
+                    `</span></span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> Wrapper <span class="token operator">=</span> styled<span class="token punctuation">.</span>section<span class="token template-string"><span class="token string">`
+                    padding: 4em;
+                    background: papayawhip;
+                    `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>Wrapper<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Title<span class="token operator">&gt;</span>
+                Hello World<span class="token punctuation">,</span> <span class="token keyword">this</span> is my first styled component<span class="token operator">!</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>Title<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>Wrapper<span class="token operator">&gt;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>使用到的样式属性，会自动的添加前缀</p></div><h2 id="属性传递"><a href="#属性传递" aria-hidden="true" class="header-anchor">#</a> 属性传递</h2><p>样式组件能够将props定义的标签属性，传递到对应的标签上</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Input <span class="token operator">=</span> styled<span class="token punctuation">.</span>input<span class="token template-string"><span class="token string">`
+                padding: 0.5em;
+                margin: 0.5em;
+                color: palevioletred;
+                background: papayawhip;
+                border: none;
+                border-radius: 3px;
+                `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件并定义props标签属性
+    <span class="token function">render</span><span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>Input placeholder<span class="token operator">=</span><span class="token string">&quot;@mxstbr&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>Input value<span class="token operator">=</span><span class="token string">&quot;@geelen&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="基于props定制样式"><a href="#基于props定制样式" aria-hidden="true" class="header-anchor">#</a> 基于props定制样式</h2><p>根据组件传递的props，可以内部使用插值法(函数)，响应样式定制</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token string">`
+        background: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>primary <span class="token operator">?</span> <span class="token string">'palevioletred'</span> <span class="token punctuation">:</span> <span class="token string">'white'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+        color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>primary <span class="token operator">?</span> <span class="token string">'white'</span> <span class="token punctuation">:</span> <span class="token string">'palevioletred'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+        font-size: 1em;
+        margin: 1em;
+        padding: 0.25em 1em;
+        border: 2px solid palevioletred;
+        border-radius: 3px;
+        `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Button<span class="token operator">&gt;</span>Normal<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Button primary<span class="token operator">&gt;</span>Primary<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="样式组件的继承"><a href="#样式组件的继承" aria-hidden="true" class="header-anchor">#</a> 样式组件的继承</h2><p>通过extend方法，能够继承组件的样式，样式得到复用，提高开发效率</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token string">`
+                color: palevioletred;
+                font-size: 1em;
+                margin: 1em;
+                padding: 0.25em 1em;
+                border: 2px solid palevioletred;
+                border-radius: 3px;
+                `</span></span><span class="token punctuation">;</span> 
+    <span class="token keyword">const</span> TomatoButton <span class="token operator">=</span> Button<span class="token punctuation">.</span>extend<span class="token template-string"><span class="token string">`
+                color: tomato;
+                border-color: tomato;
+                `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Button<span class="token operator">&gt;</span>Normal Button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>TomatoButton<span class="token operator">&gt;</span>Tomato Button<span class="token operator">&lt;</span><span class="token operator">/</span>TomatoButton<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><div class="danger custom-block"><p class="custom-block-title">WARNING</p><p>extend是基于样式组件来进行继承的，可以将组件通过style(Comp)来转换成样式组件</p></div><h2 id="样式组件标签名的更换"><a href="#样式组件标签名的更换" aria-hidden="true" class="header-anchor">#</a> 样式组件标签名的更换</h2><p>withComponent('tagName')可以将一个样式组件的标签名进行替换</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Button <span class="token operator">=</span> styled<span class="token punctuation">.</span>button<span class="token template-string"><span class="token string">`
+                display: inline-block;
+                color: palevioletred;
+                font-size: 1em;
+                margin: 1em;
+                padding: 0.25em 1em;
+                border: 2px solid palevioletred;
+                border-radius: 3px;
+                `</span></span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> Link <span class="token operator">=</span> Button<span class="token punctuation">.</span><span class="token function">withComponent</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> TomatoLink <span class="token operator">=</span> Link<span class="token punctuation">.</span>extend<span class="token template-string"><span class="token string">`
+                color: tomato;
+                border-color: tomato;
+                `</span></span><span class="token punctuation">;</span>  
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Button<span class="token operator">&gt;</span>Normal Button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Link<span class="token operator">&gt;</span>Normal Link<span class="token operator">&lt;</span><span class="token operator">/</span>Link<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>TomatoLink<span class="token operator">&gt;</span>Tomato Link<span class="token operator">&lt;</span><span class="token operator">/</span>TomatoLink<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>                      
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="扩展props"><a href="#扩展props" aria-hidden="true" class="header-anchor">#</a> 扩展props</h2><p>通过attrs({config})可以给标签添加动态和静态的属性，扩展组件接收的props</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+    <span class="token keyword">const</span> Input <span class="token operator">=</span> styled<span class="token punctuation">.</span>input<span class="token punctuation">.</span><span class="token function">attrs</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    type<span class="token punctuation">:</span> <span class="token string">'password'</span><span class="token punctuation">,</span>
+                    margin<span class="token punctuation">:</span> props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>size <span class="token operator">||</span> <span class="token string">'1em'</span><span class="token punctuation">,</span>
+                    padding<span class="token punctuation">:</span> props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>size <span class="token operator">||</span> <span class="token string">'1em'</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token template-string"><span class="token string">`
+                    color: palevioletred;
+                    font-size: 1em;
+                    border: 2px solid palevioletred;
+                    border-radius: 3px;
+                    margin: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>margin<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+                    padding: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>props <span class="token operator">=&gt;</span> props<span class="token punctuation">.</span>padding<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+                    `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Input placeholder<span class="token operator">=</span><span class="token string">&quot;A small text input&quot;</span> size<span class="token operator">=</span><span class="token string">&quot;1em&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>br <span class="token operator">/</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Input placeholder<span class="token operator">=</span><span class="token string">&quot;A bigger text input&quot;</span> size<span class="token operator">=</span><span class="token string">&quot;2em&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="animation"><a href="#animation" aria-hidden="true" class="header-anchor">#</a> animation</h2><p>通过keyframes可以生成唯一的名字，可以有效的避免命名冲突</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>    ##定义样式组件
+<span class="token keyword">const</span> rotate360 <span class="token operator">=</span> keyframes<span class="token template-string"><span class="token string">`
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+                `</span></span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> Rotate <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token string">`
+            display: inline-block;
+            animation: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>rotate360<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> 2s linear infinite;
+            padding: 2rem 1rem;
+            font-size: 1.2rem;
+            `</span></span><span class="token punctuation">;</span>
+    ##使用样式组件
+    <span class="token function">render</span><span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Rotate<span class="token operator">&gt;</span><span class="token operator">&amp;</span>lt<span class="token punctuation">;</span> 💅 &quot;<span class="token operator">&gt;</span><span class="token operator">&amp;</span>gt<span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Rotate<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></div><div class="page-edit"><div class="edit-link"><a href="https://github.com/zengshide123/blog/edit/master/styled-components.md" target="_blank" rel="noopener noreferrer">查看原文 | 编辑此文档！</a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/blog/react-transition-group.html" class="prev">
+          react动画库
+        </a></span><span class="next"><a href="/blog/mongodb.html">
+          win系统安装mongodb
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/blog/assets/js/7.916a93d9.js" defer></script><script src="/blog/assets/js/app.10884d59.js" defer></script>
+  </body>
+</html>
